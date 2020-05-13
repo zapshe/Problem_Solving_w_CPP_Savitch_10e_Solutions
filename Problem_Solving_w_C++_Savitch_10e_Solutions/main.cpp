@@ -1,15 +1,43 @@
-//
-//  main.cpp
-//  Problem_Solving_w_C++_Savitch_10e_Solutions
-//
-//  Created by Quiyet Brul on 5/12/20.
-//  Copyright © 2020 Quiyet Brul. All rights reserved.
-//
+/*
+ * File:   main.cpp
+ * Author: quiyetbrul
+ *
+ * Created on May 12, 2020, 8:34 AM
+ */
 
+#include <cstdlib>
 #include <iostream>
+#include "input_validation.h"
+#include "Chapter_1.h"
+#include "Chapter_2.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+
+int main(int argc, char** argv) {
+
+    do{
+        cout << "Practice and Project Solutions" << endl;
+        cout << "==============================" << endl;
+		cout << "1. Chapter_1" << endl;
+        cout << "2. Chapter_2" << endl;
+        cout << "0. Exit" << endl;
+        cout << "==============================" << endl;
+        cout << "Option : ";
+
+        char option[80];
+        cin >> option;
+
+        switch(atoi(option)){
+			case 1: Chapter_1(); break;
+            case 2: Chapter_2(); break;
+            case 0: exit(0);
+            default: break;
+        }
+    }while(true);
+    
     return 0;
 }
+
+
+
