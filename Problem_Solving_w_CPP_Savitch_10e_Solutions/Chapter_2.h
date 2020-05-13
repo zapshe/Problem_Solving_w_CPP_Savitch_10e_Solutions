@@ -16,8 +16,6 @@ void Ch2_Programming_Project_2();
 
 int Chapter_2() {
 	do {
-		//system("clear");
-		//system("cls");
 		cout << endl;
 		
 		cout << "Chapter 2 Solutions" << endl;

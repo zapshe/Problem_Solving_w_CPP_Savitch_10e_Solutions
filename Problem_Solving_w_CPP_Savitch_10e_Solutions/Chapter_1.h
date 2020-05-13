@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 void Ch1_Practice_Program_1();
 void Ch1_Practice_Program_2();
@@ -15,8 +14,6 @@ void Ch1_Programming_Projects_5();
 
 int Chapter_1() {
 	do {
-		//system("clear");
-		//system("cls");
 		cout << endl;
 		
 		cout << "Chapter 1 Solutions" << endl;
@@ -186,7 +183,7 @@ void Ch1_Programming_Projects_2(){
 	cout << "       C         C        S         S      \n";
 	cout << "         C C C C            S S S S      00\n";
 	cout << "*************************************************\n";
-	cout << "       Computer Science is Cool Stuff!!!";
+	cout << "       Computer Science is Cool Stuff!!!" << endl;
 }
 
 void Ch1_Programming_Projects_3(){
@@ -209,7 +206,7 @@ void Ch1_Programming_Projects_3(){
 	cout << "If you have " << quarters << " quarters, " << dimes << "  dimes, ";
 	cout << nickels << " nickels, and ";
 	cout << penny << " penny, then your total coin value is ";
-	cout << "$" << total << ".\n " <<"Spend wisely, human!";
+	cout << "$" << total << ".\n " <<"Spend wisely, human!" << endl;
 }
 
 void Ch1_Programming_Projects_4(){
