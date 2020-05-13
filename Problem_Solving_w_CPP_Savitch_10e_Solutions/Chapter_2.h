@@ -52,6 +52,7 @@ int Chapter_2() {
 			case 8: Ch2_Programming_Project_3(); break;
 			case 9: Ch2_Programming_Project_4(); break;
 			case 10: Ch2_Programming_Project_5(); break;
+			case 11: Ch2_Programming_Project_6(); break;
 			case 0: exit(0);
 			default: break;
 		}
