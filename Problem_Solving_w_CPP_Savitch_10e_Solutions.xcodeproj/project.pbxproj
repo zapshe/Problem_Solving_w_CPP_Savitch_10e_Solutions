@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		65B7A972246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Problem_Solving_w_C++_Savitch_10e_Solutions"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B7A972246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Problem_Solving_w_CPP_Savitch_10e_Solutions; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B7A975246B75AE007AB2C9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		65B7A97C246B75CD007AB2C9 /* Chapter_2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chapter_2.h; sourceTree = "<group>"; };
 		65B7A97D246B75FE007AB2C9 /* input_validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = input_validation.h; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		65B7A969246B75AE007AB2C9 = {
 			isa = PBXGroup;
 			children = (
-				65B7A974246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */,
+				65B7A974246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */,
 				65B7A973246B75AE007AB2C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		65B7A973246B75AE007AB2C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65B7A972246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */,
+				65B7A972246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65B7A974246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */ = {
+		65B7A974246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */ = {
 			isa = PBXGroup;
 			children = (
 				65B7A975246B75AE007AB2C9 /* main.cpp */,
@@ -65,15 +65,15 @@
 				65B7A97C246B75CD007AB2C9 /* Chapter_2.h */,
 				65B7A97D246B75FE007AB2C9 /* input_validation.h */,
 			);
-			path = "Problem_Solving_w_C++_Savitch_10e_Solutions";
+			path = Problem_Solving_w_CPP_Savitch_10e_Solutions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65B7A971246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */ = {
+		65B7A971246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65B7A979246B75AE007AB2C9 /* Build configuration list for PBXNativeTarget "Problem_Solving_w_C++_Savitch_10e_Solutions" */;
+			buildConfigurationList = 65B7A979246B75AE007AB2C9 /* Build configuration list for PBXNativeTarget "Problem_Solving_w_CPP_Savitch_10e_Solutions" */;
 			buildPhases = (
 				65B7A96E246B75AE007AB2C9 /* Sources */,
 				65B7A96F246B75AE007AB2C9 /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = "Problem_Solving_w_C++_Savitch_10e_Solutions";
+			name = Problem_Solving_w_CPP_Savitch_10e_Solutions;
 			productName = "Problem_Solving_w_C++_Savitch_10e_Solutions";
-			productReference = 65B7A972246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */;
+			productReference = 65B7A972246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65B7A96D246B75AE007AB2C9 /* Build configuration list for PBXProject "Problem_Solving_w_C++_Savitch_10e_Solutions" */;
+			buildConfigurationList = 65B7A96D246B75AE007AB2C9 /* Build configuration list for PBXProject "Problem_Solving_w_CPP_Savitch_10e_Solutions" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65B7A971246B75AE007AB2C9 /* Problem_Solving_w_C++_Savitch_10e_Solutions */,
+				65B7A971246B75AE007AB2C9 /* Problem_Solving_w_CPP_Savitch_10e_Solutions */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +264,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65B7A96D246B75AE007AB2C9 /* Build configuration list for PBXProject "Problem_Solving_w_C++_Savitch_10e_Solutions" */ = {
+		65B7A96D246B75AE007AB2C9 /* Build configuration list for PBXProject "Problem_Solving_w_CPP_Savitch_10e_Solutions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B7A977246B75AE007AB2C9 /* Debug */,
@@ -273,7 +273,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65B7A979246B75AE007AB2C9 /* Build configuration list for PBXNativeTarget "Problem_Solving_w_C++_Savitch_10e_Solutions" */ = {
+		65B7A979246B75AE007AB2C9 /* Build configuration list for PBXNativeTarget "Problem_Solving_w_CPP_Savitch_10e_Solutions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65B7A97A246B75AE007AB2C9 /* Debug */,
