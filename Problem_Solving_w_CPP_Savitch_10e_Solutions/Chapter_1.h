@@ -25,11 +25,11 @@ int Chapter_1() {
 		cout << "4. Practice_Program_4" << endl;
 		cout << "5. Practice_Program_5" << endl;
 		cout << "6. Practice_Program_6" << endl;
-		cout << "7. Practice_Program_7" << endl;
-		cout << "8. Practice_Program_8" << endl;
-		cout << "9. Practice_Program_9" << endl;
-		cout << "10. Practice_Program_10" << endl;
-		cout << "11. Practice_Program_11" << endl;
+		cout << "7. Project_Program_1" << endl;
+		cout << "8. Project_Program_2" << endl;
+		cout << "9. Project_Program_3" << endl;
+		cout << "10. Project_Program_4" << endl;
+		cout << "11. Project_Program_5" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
