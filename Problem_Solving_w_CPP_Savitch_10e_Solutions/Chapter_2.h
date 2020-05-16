@@ -17,6 +17,8 @@ void Ch2_Programming_Project_5();
 void Ch2_Programming_Project_6();
 void Ch2_Programming_Project_7();
 void Ch2_Programming_Project_8();
+void Ch2_Programming_Project_9();
+void Ch2_Programming_Project_10();
 
 int Chapter_2() {
 	do {
@@ -37,6 +39,8 @@ int Chapter_2() {
 		cout << "11. Programming_Project_6" << endl;
 		cout << "12. Programming_Project_7" << endl;
 		cout << "13. Programming_Project_8" << endl;
+		cout << "14. Programming_Project_9" << endl;
+		cout << "15. Programming_Project_10" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
@@ -59,6 +63,8 @@ int Chapter_2() {
 			case 11: Ch2_Programming_Project_6(); break;
 			case 12: Ch2_Programming_Project_7(); break;
 			case 13: Ch2_Programming_Project_8(); break;
+			case 14: Ch2_Programming_Project_9(); break;
+			case 15: Ch2_Programming_Project_10(); break;
 			case 0: exit(0);
 			default: break;
 		}
@@ -386,7 +392,7 @@ void Ch2_Programming_Project_8(){
 	double total_interest = 0;
 	double principal = 0;
 	int months = 0;
-
+	
 	while (debt > 0)
 	{
 		interest = debt * interest_monthly;
@@ -397,4 +403,44 @@ void Ch2_Programming_Project_8(){
 	}
 	
 	cout << endl << months << " month(s) needed to pay" << endl;
+}
+
+void Ch2_Programming_Project_9(){
+	int nums [] = {0};
+	int pos = 0;
+	int neg = 0;
+	int total = 0;
+	for(int i = 0; i < 10; i++){
+		nums[i] = inputInteger("Enter a number: ");
+		total += nums[i];
+		nums[i] > 0 ? pos += nums[i] : neg += nums[i];
+	}
+	
+	cout << "Sum of positive integers: " << pos << endl;
+	cout << "Sum of negative integers: " << neg << endl;
+	cout << "Total sum of integers: " << total << endl;
+}
+
+void Ch2_Programming_Project_10(){
+	int nums [] = {0};
+	int pos = 0;
+	int neg = 0;
+	int total = 0;
+	for(int i = 0; i < 10; i++){
+		nums[i] = inputInteger("Enter a number: ");
+		total += nums[i];
+		nums[i] > 0 ? pos += nums[i] : neg += nums[i];
+	}
+	
+	double avg_pos = pos / 10;
+	double avg_neg = neg / 10;
+	double avg_total = total / 10;
+	
+	cout << "Sum of positive integers: " << pos << endl;
+	cout << "Sum of negative integers: " << neg << endl;
+	cout << "Total sum of integers: " << total << endl;
+	
+	cout << "Sum of positive integers: " << avg_pos << endl;
+	cout << "Sum of negative integers: " << avg_neg << endl;
+	cout << "Total sum of integers: " << avg_total << endl;
 }
