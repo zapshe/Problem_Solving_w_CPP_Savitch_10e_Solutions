@@ -15,6 +15,10 @@ using namespace std;
 
 int main(int argc, char** argv) {
 
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+
     do {
         cout << "Practice and Project Solutions" << endl;
         cout << "==============================" << endl;

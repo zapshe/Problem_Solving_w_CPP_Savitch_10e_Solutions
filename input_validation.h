@@ -11,6 +11,15 @@
 
 using namespace std;
 
+//return an input string
+
+string inputString(string prompt, string input) {
+    cout << prompt;
+    cin >> input;
+
+    return input;
+}
+
 //return an input char
 
 char inputChar(string prompt, string listChars) {

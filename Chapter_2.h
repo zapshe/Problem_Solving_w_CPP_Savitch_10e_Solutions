@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 void Ch2_Practice_Program_1();
 void Ch2_Practice_Program_2();
 void Ch2_Practice_Program_3();
-string User_Input(string prompt, string input);
 void Ch2_Practice_Program_4();
 void Ch2_Practice_Program_5();
 double compute_lab(double mass_sweetner, double mass_mouse, double mass_dieter);
@@ -25,6 +25,8 @@ void Ch2_Programming_Project_10();
 void Ch2_Programming_Project_11();
 void Ch2_Programming_Project_12();
 void Ch2_Programming_Project_13();
+void Ch2_Programming_Project_14();
+
 
 const double M_PI = 3.14159265359;
 
@@ -52,6 +54,7 @@ int Chapter_2() {
 		cout << "16. Programming_Project_11" << endl;
 		cout << "17. Programming_Project_12" << endl;
 		cout << "18. Programming_Project_13" << endl;
+		cout << "19. Programming_Project_14" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
@@ -79,6 +82,7 @@ int Chapter_2() {
 		case 16: Ch2_Programming_Project_11(); break;
 		case 17: Ch2_Programming_Project_12(); break;
 		case 18: Ch2_Programming_Project_13(); break;
+		case 19: Ch2_Programming_Project_14(); break;
 		case 0: exit(0);
 		default: break;
 		}
@@ -90,7 +94,7 @@ int Chapter_2() {
 void Ch2_Practice_Program_1() {
 	char ans;
 	double cereal_weight = 0.0;
-	int cereal_boxes = 0.0;
+	int cereal_boxes = 0;
 
 	//repetition structure
 	do {
@@ -146,13 +150,6 @@ void Ch2_Practice_Program_3() {
 	cout << initial_mph << " mph is " << (int)get_minutes << " minute(s) and " << get_seconds << " second(s)" << endl;
 }
 
-string User_Input(string prompt, string input) {
-	cout << prompt;
-	cin >> input;
-
-	return input;
-}
-
 void Ch2_Practice_Program_4() {
 	string instructor_name = "",
 		user_name = "",
@@ -166,13 +163,13 @@ void Ch2_Practice_Program_4() {
 	//user's name, a food, a number between 100-120,
 	//an adjective, a color, an animal
 
-	instructor_name = User_Input("Enter instructor's surname: ", instructor_name);
-	user_name = User_Input("Enter your name: ", user_name);
-	food = User_Input("Enter a food: ", food);
+	instructor_name = inputString("Enter instructor's surname: ", instructor_name);
+	user_name = inputString("Enter your name: ", user_name);
+	food = inputString("Enter a food: ", food);
 	number = inputInteger("Enter a number: ", 100, 120);
-	adjective = User_Input("Enter an adjective: ", adjective);
-	color = User_Input("Enter a color: ", color);
-	animal = User_Input("Enter an animal: ", animal);
+	adjective = inputString("Enter an adjective: ", adjective);
+	color = inputString("Enter a color: ", color);
+	animal = inputString("Enter an animal: ", animal);
 
 	//display message
 	cout << endl << "Dear Instructor " << instructor_name << "," << endl
@@ -215,9 +212,9 @@ void Ch2_Programming_Project_1() {
 	} while (ans == 'y');
 }
 
-const double PAY_INCREASE = 0.076;
-
 void retroactive_salary(int months, double current_annual_salary) {
+	const double PAY_INCREASE = 0.076;
+
 	current_annual_salary = 0.0;
 	double retroactive_pay = (current_annual_salary / 12) * PAY_INCREASE * months;
 
@@ -382,10 +379,6 @@ void Ch2_Programming_Project_7() {
 	for (int i = 0; i < item_purchase_date; i++)
 		item_cost += item_cost * item_inflation_rate;
 
-	cout.setf(ios::fixed);
-	cout.setf(ios::showpoint);
-	cout.precision(2);
-
 	cout << endl;
 	cout << "Cost: $" << item_cost << endl;
 	cout << "Purchase date: " << item_purchase_date << " year(s) from now" << endl;
@@ -460,10 +453,10 @@ void Ch2_Programming_Project_10() {
 }
 
 void Ch2_Programming_Project_11() {
-	double start_temp = 0.0, end_temp = 0.0;
+	int start_temp = 0, end_temp = 0;
 
-	start_temp = inputDouble("Enter starting temperature: ", true);
-	end_temp = inputDouble("Enter ending temperature: ", true);
+	start_temp = inputInteger("Enter starting temperature: ", true);
+	end_temp = inputInteger("Enter ending temperature: ", true);
 
 	double velocity = 0.0;
 
@@ -484,5 +477,52 @@ void Ch2_Programming_Project_12() {
 }
 
 void Ch2_Programming_Project_13() {
+	const double CHOCO_BARS = 230.0;
+	double weight_pounds = 0.0;
+	double height_inches = 0.0;
+	int age_years = 0;
+	char gender = ' ';
 
+	double BMR = 0.0;
+
+	double BMR_female = 655 + (4.3 * weight_pounds) + (4.7 * height_inches) - (4.7 * age_years);
+	double BMR_male = 66 + (6.3 * weight_pounds) + (12.9 * height_inches) - (6.8 * age_years);
+
+	weight_pounds = inputDouble("Enter weight (lbs): ", true);
+	height_inches = inputDouble("Enter height (inches): ", true);
+	age_years = inputInteger("Enter age (years): ", true);
+
+	gender = inputChar("Enter gender (f/m): ", 'f', 'm');
+
+	gender == 'f' ? BMR = BMR_female : BMR = BMR_male;
+
+	double to_consume = BMR / CHOCO_BARS;
+
+	cout << to_consume << " chocolate bar(s) must be consumed to maintain weight." << endl;
+}
+
+void Ch2_Programming_Project_14() {
+	int exercise_input = inputInteger("How many exercises to input? ", true);
+
+	vector<int> scores_received(exercise_input, 0);
+	vector<int> scores_possible(exercise_input, 0);
+
+	int total_scores_received = 0;
+	int total_scores_possible = 0;
+	double total_scores_avg = 0.0;
+
+	for (int i = 0; i < exercise_input; i++) {
+		cout << "Scores received for exercise " << i + 1 << ": ";
+		scores_received[i] = inputInteger("", true);
+
+		cout << "Total points possible for exercise " << i + 1 << ": ";
+		scores_possible[i] = inputInteger("", true);
+
+		total_scores_received += scores_received[i];
+		total_scores_possible += scores_possible[i];
+	}
+
+	total_scores_avg = total_scores_received / (double)total_scores_possible * 100;
+
+	cout << "Your total is " << total_scores_received << " out of " << total_scores_possible << ", or " << total_scores_avg << "%" << endl;
 }

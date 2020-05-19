@@ -1,5 +1,1 @@
-﻿  main.cpp
-C:\Users\Quiyet Brul\source\repos\Problem_Solving_w_CPP_Savitch_10e_Solutions\Chapter_2.h(90,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\Quiyet Brul\source\repos\Problem_Solving_w_CPP_Savitch_10e_Solutions\Chapter_2.h(140,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Quiyet Brul\source\repos\Problem_Solving_w_CPP_Savitch_10e_Solutions\Chapter_2.h(467,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Problem_Solving_w_CPP_Savitch_10e_Solutions.vcxproj -> C:\Users\Quiyet Brul\source\repos\Problem_Solving_w_CPP_Savitch_10e_Solutions\Debug\Problem_Solving_w_CPP_Savitch_10e_Solutions.exe
+﻿
