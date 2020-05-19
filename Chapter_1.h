@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void Ch1_Practice_Program_1();
 void Ch1_Practice_Program_2();
 void Ch1_Practice_Program_3();

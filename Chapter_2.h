@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cmath>
+#include <string>
+
+using namespace std;
 
 void Ch2_Practice_Program_1();
 void Ch2_Practice_Program_2();
