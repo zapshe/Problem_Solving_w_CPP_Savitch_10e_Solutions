@@ -23,6 +23,8 @@ void Ch2_Programming_Project_11();
 void Ch2_Programming_Project_12();
 void Ch2_Programming_Project_13();
 
+const double M_PI = 3.14159265359;
+
 int Chapter_2() {
 	do {
 		cout << endl;
