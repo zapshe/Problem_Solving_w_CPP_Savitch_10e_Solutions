@@ -26,6 +26,7 @@ void Ch2_Programming_Project_11();
 void Ch2_Programming_Project_12();
 void Ch2_Programming_Project_13();
 void Ch2_Programming_Project_14();
+void Ch2_Programming_Project_15();
 
 
 const double M_PI = 3.14159265359;
@@ -55,6 +56,7 @@ int Chapter_2() {
 		cout << "17. Programming_Project_12" << endl;
 		cout << "18. Programming_Project_13" << endl;
 		cout << "19. Programming_Project_14" << endl;
+		cout << "20. Programming_Project_15" << endl;
 		cout << "0. Exit" << endl;
 		cout << "==============================" << endl;
 		cout << "Option : ";
@@ -83,6 +85,7 @@ int Chapter_2() {
 		case 17: Ch2_Programming_Project_12(); break;
 		case 18: Ch2_Programming_Project_13(); break;
 		case 19: Ch2_Programming_Project_14(); break;
+		case 20: Ch2_Programming_Project_15(); break;
 		case 0: exit(0);
 		default: break;
 		}
@@ -110,23 +113,23 @@ void Ch2_Practice_Program_1() {
 }
 
 void Ch2_Practice_Program_2() {
-	double n = 0.0, r = 0.0, guess = 0.0, previous_guess = 0.0;
+	double number = 0.0, r = 0.0, guess = 0.0, previous_guess = 0.0;
 
 	//prompt user for a number to find the square root
-	n = inputInteger("Enter a number to find the square root: ", true);
+	number = inputInteger("Enter a number to find the square root: ", true);
 
 	//assign initial guess
-	guess = n / 2;
+	guess = number / 2;
 
 	//repetition structure
 	do {
-		r = n / guess;
+		r = number / guess;
 		previous_guess = guess;
 		guess = (guess + r) / 2;
 	} while (previous_guess - guess > 0.01 * previous_guess);
 
 	//display result
-	cout << "Square root approximation of " << n << " is " << guess << endl;
+	cout << "Square root approximation of " << number << " is " << guess << endl;
 }
 
 void Ch2_Practice_Program_3() {
@@ -191,10 +194,6 @@ void Ch2_Practice_Program_5() {
 	cout << "Sphere volume: " << sphere_volume << endl;
 }
 
-double compute_lab(double mass_sweetner, double mass_mouse, double mass_dieter) {
-	return (mass_dieter * (mass_sweetner / mass_mouse));
-}
-
 void Ch2_Programming_Project_1() {
 	char ans = ' ';
 	double mass_sweetner = 0.0, mass_mouse = 0.0, mass_dieter = 0.0, number_soda = 0.0;
@@ -205,7 +204,7 @@ void Ch2_Programming_Project_1() {
 		mass_mouse = inputDouble("Mouse mass: ", true);
 		mass_dieter = inputDouble("Dieter mass: ", true);
 
-		number_soda = compute_lab(mass_sweetner, mass_mouse, mass_dieter) / (mass_sweetner * PERCENT);
+		number_soda = (mass_dieter * (mass_sweetner / mass_mouse)) / (mass_sweetner * PERCENT);
 		cout << "Soda pop limit: " << (ceil(number_soda) - 1) << endl;
 
 		ans = inputChar("Repeat (y/n)? ", 'y', 'n');
@@ -345,10 +344,7 @@ void Ch2_Programming_Project_6() {
 		federal_income_tax = 0.14 * gross_pay;
 		state_income_tax = 0.05 * gross_pay;
 
-		dependents >= 3 ?
-			insurance_dependent = 35
-			:
-			insurance_dependent = 0;
+		dependents >= 3 ? insurance_dependent = 35 : insurance_dependent = 0;
 
 		withold = social_security_tax + federal_income_tax + state_income_tax + insurance_dependent + union_dues;
 		net_pay = gross_pay - withold;
@@ -525,4 +521,8 @@ void Ch2_Programming_Project_14() {
 	total_scores_avg = total_scores_received / (double)total_scores_possible * 100;
 
 	cout << "Your total is " << total_scores_received << " out of " << total_scores_possible << ", or " << total_scores_avg << "%" << endl;
+}
+
+void Ch2_Programming_Project_15() {
+
 }
